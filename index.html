@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#87aee8" />
+  <title>Wildhaven — Open World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}
+  </script>
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div class="brand"><span>WILDHAVEN</span><small>EXPLORE · DISCOVER</small></div>
+    <div id="objective"><b>Objective</b><span id="objectiveText">Find 5 waystones</span><em id="progress">0 / 5</em></div>
+    <div id="compass"><span id="direction">N</span><div class="ticks"></div></div>
+  </div>
+
+  <div id="crosshair"></div>
+  <div id="prompt"></div>
+
+  <div id="startScreen">
+    <div class="eyebrow">A PROCEDURAL OPEN WORLD</div>
+    <h1>WILDHAVEN</h1>
+    <p>Cross the untamed valley, gather ancient waystones, and find a quiet place beyond the horizon.</p>
+    <button id="startButton">Enter the wild <span>→</span></button>
+    <div class="controls"><span><kbd>WASD</kbd> Move</span><span><kbd>SHIFT</kbd> Sprint</span><span><kbd>MOUSE</kbd> Look</span></div>
+  </div>
+
+  <div id="toast"></div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
